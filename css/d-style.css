@@ -184,3 +184,8 @@ body.dark-mode .competence > .autres > figure > img:nth-of-type(2) {
 body.dark-mode .text_projet a{
     color: white;
 }
+
+body.dark-mode #projet > p {
+    text-align: center;
+    color: #bdbdbd;
+}
