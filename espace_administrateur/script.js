@@ -1,6 +1,6 @@
 const darklightmode = localStorage.getItem("darklightmode");
 
-if (darklightmode == "dark")
+if (darklightmode === "dark")
 {
         const body = document.querySelector("body");
     

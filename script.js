@@ -1,10 +1,19 @@
 const modeToggler = document.getElementById('modeToggler');
 
-window.localStorage.setItem("darklightmode", "light");
-
 modeToggler.addEventListener('click', () => {
     toggleDarkLight();
 });
+
+const darklightmode = localStorage.getItem("darklightmode");
+
+if (darklightmode === "dark")
+{
+    document.getElementById('modeToggler').checked = true;
+    toggleDarkLight();
+}
+else {
+    window.localStorage.setItem("darklightmode", "light");
+}
 
 function toggleDarkLight() {
     
