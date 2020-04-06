@@ -13,6 +13,7 @@ if (darklightmode === "dark")
         })
     
     function toggleDarkLightForElement(elem, lighModeClassname, darkModeClassname) {
-        elem.classList.add(darkModeClassname)
+            elem.classList.remove(lighModeClassname)
+            elem.classList.add(darkModeClassname)
     }
 }
