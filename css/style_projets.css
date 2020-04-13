@@ -192,8 +192,12 @@ a > #slider p {
     color: #6e6e6e;
 }
 
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
 .bouncy {
-    margin: auto;
     animation: bouncy 6s infinite cubic-bezier(1, 1.73, 0.68, 0.87);
     position: relative;
     text-decoration: none;
@@ -202,11 +206,48 @@ a > #slider p {
     color: white;
     border-radius: 5px;
     transition: 500ms ease-in-out;
+    margin: 5px;
 }
 
 .bouncy:hover {
     background-color: rgb(63, 63, 63);
     animation: none;
+    transition: 100ms ease-in-out;
+    border-radius: 10px;
+}
+
+.gh-ico {
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…0yLjYgMTMtOS43IDEzLTE4LjFDNTEgMjEuOSA0Mi41IDEzLjQgMzIgMTMuNHoiLz48L3N2Zz4=);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.btns a > img {
+    height: 18px;
+    margin-right: 10px;
+}
+
+.btns a:nth-of-type(2) {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: 500ms ease-in-out;
+    margin: 5px;
+    display: flex;
+}
+
+.btns a:nth-of-type(2):hover {
+    background-color: rgb(19, 19, 19);
     transition: 100ms ease-in-out;
     border-radius: 10px;
 }
@@ -381,8 +422,8 @@ footer .copyright p{
         padding: 30px 30px;
     }
 
-    .bouncy {
-        margin: 20px auto;
+    .btns {
+        margin-top: 20px;
     }
 }
 

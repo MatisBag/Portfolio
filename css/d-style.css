@@ -18,6 +18,7 @@ header > div > a > img:nth-of-type(2) {
     margin-left: 15px;
     position: relative;
     top: 15px;
+    -moz-appearance:initial
 }
 
 #modeToggler, label[for="modeToggler"] {
@@ -26,11 +27,12 @@ header > div > a > img:nth-of-type(2) {
 
 #modeToggler::before, #modeToggler::after {
     display: block;
-    content: '';
+    content: ' ';
     transition: background-color 200ms;
 }
 
 #modeToggler::before {
+    content: ' ';
     background-color: #1b1b1b;
     width: 40px;
     height: 19px;
@@ -40,6 +42,7 @@ header > div > a > img:nth-of-type(2) {
 }
 
 #modeToggler::after {
+    content: ' ';
     background-color: #c4c4c4;
     width: 15px;
     height: 15px;
@@ -58,6 +61,45 @@ header > div > a > img:nth-of-type(2) {
     background-color: #c4c4c4;
     left: 16px;
 }
+
+/* 
+#modeToggler:before, #modeToggler:after {
+    display: block;
+    content: ' ';
+    transition: background-color 200ms;
+}
+
+#modeToggler:before {
+    content: ' ';
+    background-color: #1b1b1b;
+    width: 40px;
+    height: 19px;
+    border-radius: 20px;
+    margin-left: -5px;
+    margin-top: -3px;
+}
+
+#modeToggler:after {
+    content: ' ';
+    background-color: #c4c4c4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: -17px;
+    left: 0px;
+    transition: left 200ms;
+}
+
+#modeToggler:checked:before {
+    background-color: #525252;
+}
+
+#modeToggler:checked:after {
+    background-color: #c4c4c4;
+    left: 16px;
+} */
+
 
 body.light-mode {
     color: black;
