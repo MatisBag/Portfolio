@@ -9,6 +9,17 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+}
+
 img {
     max-width: 100%;
     user-select: none;
@@ -430,12 +441,5 @@ footer .copyright p{
 @media screen and (min-width: 1600px) {
     header {
         max-width: 1400px;
-    }
-}
-
-@media screen and (min-height: 1000px) {
-    footer {
-        position: absolute;
-        bottom: 0;
     }
 }
