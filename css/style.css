@@ -377,7 +377,7 @@ section#presentation {
 
 .container .box {
     position: relative;
-    height: 38vw;
+    height: 39vw;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -468,13 +468,13 @@ footer .copyright p{
 
 @media screen and (min-width: 400px) {
     .container .box {
-        height: 39vw;
+        height: 40vw;
     }
 }
 
 @media screen and (min-width: 550px) {
     .container .box {
-        height: 40.5vw;
+        height: 41vw;
     }
 }
 
@@ -493,11 +493,14 @@ footer .copyright p{
     section#presentation, section#competences, section#projets {
         padding: 64px 45px;
     }
+    .container .box {
+        height: 38vw;
+    }
 }
 
 @media screen and (min-width: 630px) {
     .container .box {
-        height: 39vw;
+        height: 40vw;
     }
 }
 
