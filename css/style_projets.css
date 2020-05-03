@@ -183,7 +183,9 @@ a > #slider p {
 
 .text_projet {
     padding: 30px 0px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text_projet p:nth-of-type(3) {
