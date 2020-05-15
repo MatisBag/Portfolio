@@ -9,23 +9,30 @@
 	<meta name="title" content="Matis Baguelin : Portfolio">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/d-style.css">
-	<title>Matis Baguelin</title>
+	<title>Portfolio - Matis Baguelin</title>
 	<link rel="icon" type="image/png" href="images/home-icon.png" />
+
+	<link rel="alternate" href="http://matisbaguelin.fr/" hreflang="fr-fr" />
+
 	<meta name="author" content="Matis Baguelin">
 	<meta name="Keywords" content="Matis Baguelin, développeur web, étudiant développement, web developer">
 
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://matisbaguelin.fr/">
-	<meta property="og:title" content="Matis Baguelin : Portfolio">
+	<meta property="og:title" content="Portfolio - Matis Baguelin">
 	<meta property="og:description" content="Etudiant de 18 ans à l'EEMI, je suis passionné par le Développement web.">
-	<meta property="og:image" content="http://matisbaguelin.fr/images/image_apercu.PNG">
+	<meta property="og:image" content="http://matisbaguelin.fr/images/image-apercu.PNG">
 	<!--1200x628-->
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="http://matisbaguelin.fr/">
-	<meta property="twitter:title" content="Matis Baguelin : Portfolio">
-	<meta property="twitter:description" content="Etudiant de 19 ans à l'EEMI, je suis passionné par le Développement web.">
-	<meta property="twitter:image" content="http://matisbaguelin.fr/images/image_apercu.PNG">
+	<meta property="twitter:title" content="Portfolio - Matis Baguelin">
+	<meta property="twitter:description"
+		content="Etudiant de 19 ans à l'EEMI, je suis passionné par le Développement web.">
+	<meta property="twitter:image" content="http://matisbaguelin.fr/images/image-apercu.PNG">
+
+	<meta name="google-site-verification" content="mRoWjeL0n7yhVT14MbJg3sooMVon6Lk6Lcc-OVscFlQ" />
+	
 	<script defer src="js/script.js"></script>
 </head>
 
@@ -60,12 +67,13 @@
 				<h2>Étudiant en Développement Web</h2>
 
 				<p>
-					Etudiant à l'<a href="https://www.eemi.com/" target="_blanck" >EEMI</a> je m'intéresse aux métiers du
+					Etudiant à l'<a href="https://www.eemi.com/" target="_blanck" rel="eemi">EEMI</a> je m'intéresse aux
+					métiers du
 					web, en particulier celui de
 					<span class="gras">développeur web</span>
 				</p>
 
-				<a href="images/cv_matis_baguelin.pdf" download>Mon CV </a>
+				<a href="images/cv-matis-baguelin.pdf" download>Mon CV </a>
 
 			</div>
 
@@ -94,7 +102,8 @@
 				<div class="competence">
 					<h4>Back-end</h4>
 					<img src="images/competences/back-end.png" alt="PHP, MySQL, Node.js" title="Node.js en 2ème année">
-					<img src="images/competences/d-back-end.png" alt="PHP, MySQL, Node.js" title="Node.js en 2ème année">
+					<img src="images/competences/d-back-end.png" alt="PHP, MySQL, Node.js"
+						title="Node.js en 2ème année">
 				</div>
 			</div>
 			<div class="competence">
@@ -155,19 +164,19 @@
 
 			<div class="lesprojets">
 				<div class="projet">
-					<h5>Espace administrateur</h5>
+					<h4>Espace administrateur</h4>
 					<p>Réalisation d'une consigne</p>
 					<div class="container">
 						<div class="box">
-							<a href="espace_administrateur/">
-								<img src="images/projets/espace_administrateur.png" alt="Projet 1 : Espace admin">
+							<a href="espace-administrateur/">
+								<img src="images/projets/espace-administrateur.png" alt="Projet 1 : Espace admin">
 							</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="projet">
-					<h5>Conference</h5>
+					<h4>Conference</h4>
 					<p>Réalisation maquette</p>
 					<div class="container">
 						<div class="box">
@@ -179,12 +188,13 @@
 				</div>
 
 				<div class="projet">
-					<h5>Framework</h5>
+					<h4>Framework</h4>
 					<p>Réalisation avec Materialize</p>
 					<div class="container">
 						<div class="box">
 							<a href="materialize/">
-								<img src="images/projets/home-page.png" alt="Projet 3 : Réalisation site avec avec Materialize">
+								<img src="images/projets/home-page.png"
+									alt="Projet 3 : Réalisation site avec avec Materialize">
 							</a>
 						</div>
 					</div>
@@ -203,8 +213,8 @@
 	<footer>
 		<div class="footer">
 			<address>
-				<a href="https://www.linkedin.com/in/matis-baguelin/" target="_blanck">Linkedin</a>
-				<a href="https://github.com/MatisBag" target="_blanck">Github</a>
+				<a href="https://www.linkedin.com/in/matis-baguelin/" target="_blanck" rel="linkedin">Linkedin</a>
+				<a href="https://github.com/MatisBag" target="_blanck" rel="github">Github</a>
 				<p>matis.baguelin@gmail.com</p>
 			</address>
 
@@ -219,6 +229,20 @@
 	</footer>
 
 
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Matis Baguelin",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"url": "http://matisbaguelin.fr/",
+				"email": "matis.baguelin@gmail.com",
+				"telephone": "+33 695960931",
+				"Linkedin": "https://www.linkedin.com/in/matis-baguelin/"
+			}
+		}
+	</script>
 
 </body>
 

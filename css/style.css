@@ -70,7 +70,7 @@ h3 {
     transition: ease 500ms;
 }
 
-h4 {
+#competences h4 {
     font-size: 18px;
     display: flex;
     width: max-content;
@@ -82,20 +82,20 @@ h4 {
     transition: background-color 500ms ease, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out;
 }
 
-h4:hover {
+#competences h4:hover {
     padding: 6px 42px;
     border-radius: 45%;
     background-color: rgb(247, 247, 247);
     transition: 0.4s ease-in-out;
 }
 
-h5 {
+#projets h4 {
     margin-left: 10px;
     font-size: 1.2rem;
     transition: 500ms ease;
 }
 
-h5 + p {
+#projets h4 + p {
     color: rgb(56, 56, 56);
     margin-left: 10px;
     font-size: 0.8rem;
