@@ -10,7 +10,7 @@ header > div > a > img:nth-of-type(2) {
     display: none;
 }
 
-.competence > .autres > figure > img:nth-of-type(2) {
+.outils figure > img:nth-of-type(2) {
     display: none;
 }
 
@@ -126,17 +126,22 @@ body.dark-mode h3 {
     color: white;
 }
 
-body.dark-mode h4 {
+body.dark-mode #competences h4 {
     background-color: rgb(46, 46, 46);
     transition: background-color 500ms ease, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out;
 }
 
-body.dark-mode h4:hover {
+body.dark-mode #competences h4:hover {
     background-color: rgb(54, 54, 54);
     transition: 0.4s ease-in-out;
 }
 
-body.dark-mode h5 + p {
+body.dark-mode #projets h4 {
+    color: white;
+    transition: ease 500ms;
+}
+
+body.dark-mode #projets h4 + p {
     color: rgb(209, 209, 209);
     transition: 500ms ease;
 }
@@ -215,11 +220,11 @@ body.dark-mode .competence > img:nth-of-type(2) {
     display: block;
 }
 
-body.dark-mode .competence > .autres > figure > img:nth-of-type(1) {
+body.dark-mode .outils > .autres > figure > img:nth-of-type(1) {
     display: none;
 }
 
-body.dark-mode .competence > .autres > figure > img:nth-of-type(2) {
+body.dark-mode .outils > .autres > figure > img:nth-of-type(2) {
     display: block;
 }
 

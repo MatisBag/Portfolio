@@ -72,13 +72,12 @@ h3 {
 
 #competences h4 {
     font-size: 18px;
-    display: flex;
-    width: max-content;
+    display: inline-block;
     padding: 6px 12px;
     background-color: rgb(245, 245, 245);
     /* border: 1px solid rgba(0, 0, 0, .5); */
     border-radius: 10px;
-    margin: 30px auto 0 auto;
+    margin: 30px 0 0 0;
     transition: background-color 500ms ease, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out;
 }
 
@@ -95,7 +94,7 @@ h3 {
     transition: 500ms ease;
 }
 
-#projets h4 + p {
+#projets h4+p {
     color: rgb(56, 56, 56);
     margin-left: 10px;
     font-size: 0.8rem;
@@ -114,7 +113,7 @@ header {
     align-items: center;
 }
 
-header > a:nth-of-type(1) img {
+header>a:nth-of-type(1) img {
     height: 42px;
 }
 
@@ -136,7 +135,9 @@ header div img {
 }
 
 
-section#presentation, section#competences, section#projets {
+section#presentation,
+section#competences,
+section#projets {
     max-width: 1400px;
     padding: 32px 22px;
     margin: auto;
@@ -181,28 +182,38 @@ section#presentation {
 }
 
 @-webkit-keyframes bounceInRight {
-    from, 60%, 75%, 90%, to {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
+
     from {
         opacity: 0;
         -webkit-transform: translate3d(3000px, 0, 0);
         transform: translate3d(3000px, 0, 0);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translate3d(-25px, 0, 0);
         transform: translate3d(-25px, 0, 0);
     }
+
     75% {
         -webkit-transform: translate3d(10px, 0, 0);
         transform: translate3d(10px, 0, 0);
     }
+
     90% {
         -webkit-transform: translate3d(-5px, 0, 0);
         transform: translate3d(-5px, 0, 0);
     }
+
     to {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -210,28 +221,38 @@ section#presentation {
 }
 
 @keyframes bounceInRight {
-    from, 60%, 75%, 90%, to {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
         -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
+
     from {
         opacity: 0;
         -webkit-transform: translate3d(3000px, 0, 0);
         transform: translate3d(3000px, 0, 0);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translate3d(-25px, 0, 0);
         transform: translate3d(-25px, 0, 0);
     }
+
     75% {
         -webkit-transform: translate3d(10px, 0, 0);
         transform: translate3d(10px, 0, 0);
     }
+
     90% {
         -webkit-transform: translate3d(-5px, 0, 0);
         transform: translate3d(-5px, 0, 0);
     }
+
     to {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -259,7 +280,7 @@ section#presentation {
     -webkit-transform-style: preserve-3d;
     animation: rotate 8s infinite linear;
     transition: background-color 1s ease,
-    border 1s ease;
+        border 1s ease;
 }
 
 @keyframes rotate {
@@ -280,15 +301,15 @@ section#presentation {
     bottom: 0;
     border-radius: 50%;
     transition: background-color 1s ease,
-    border 1s ease;
+        border 1s ease;
 }
 
 .circle>div:hover {
     background-color: rgba(236, 236, 236, 0.22);
     border: 5px solid rgb(243, 243, 243);
     transition: background-color 2s ease,
-    border 2s ease;
-} 
+        border 2s ease;
+}
 
 .circle>div:nth-child(1) {
     transform: rotateY(36deg);
@@ -324,18 +345,24 @@ section#presentation {
     width: 100%;
 }
 
-.competence:nth-of-type(2) h4 {
+.outils {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outils h4 {
     margin-top: 40px;
 }
 
-.competence .autres {
+.outils .autres {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 32px;
 }
 
-.competence .autres figure {
+.outils .autres figure {
     width: 85px;
     margin: 0px 12px 20px 12px;
     display: flex;
@@ -344,11 +371,11 @@ section#presentation {
     font-weight: 500;
 }
 
-.competence .autres figure img {
+.outils .autres figure img {
     height: 36px;
 }
 
-.competence .autres figure figcaption {
+.outils .autres figure figcaption {
     margin-top: 4px;
     font-size: 0.9rem;
 }
@@ -452,12 +479,12 @@ address p {
     letter-spacing: .2rem;
 }
 
-.copyright img{
+.copyright img {
     height: 50px;
     margin-right: 20px;
 }
 
-footer .copyright p{
+footer .copyright p {
     font-size: 0.8rem;
     color: rgb(204, 204, 204);
 }
@@ -482,17 +509,27 @@ footer .copyright p{
     h1 {
         font-size: 5rem;
     }
+
     h2 {
         margin-bottom: 0px;
     }
+
     h3 {
         margin-left: 50px;
+        display: inline-block;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: -ms-fit-content;
+        width: -o-fit-content;
         width: fit-content;
-        width: max-content;
     }
-    section#presentation, section#competences, section#projets {
+
+    section#presentation,
+    section#competences,
+    section#projets {
         padding: 64px 45px;
     }
+
     .container .box {
         height: 38vw;
     }
@@ -508,12 +545,15 @@ footer .copyright p{
     .topcompetences {
         flex-direction: row;
     }
+
     .topcompetences .competence {
         max-width: 400px;
     }
+
     .topcompetences {
         justify-content: space-around;
     }
+
     .top {
         display: block;
         background-color: white;
@@ -526,16 +566,17 @@ footer .copyright p{
         right: 10px;
         bottom: 10px;
     }
-    
+
     .top a {
         display: block;
         max-height: 30px;
     }
-    
+
     .top img {
         height: 30px;
         width: auto;
     }
+
     .footer {
         padding: 20px 40px;
     }
@@ -555,23 +596,28 @@ footer .copyright p{
         justify-content: space-around;
         flex-wrap: wrap;
     }
+
     .projet {
         width: 50%;
         padding: 0 20px;
         margin: 0 auto;
     }
+
     .container .box img {
         position: relative;
         top: 1.5px;
     }
+
     .container .box {
         position: relative;
         height: 19.7vw;
         max-height: 285px;
     }
+
     .pres-left {
         width: 75%;
     }
+
     .pres-right {
         display: block;
         width: 400px;
@@ -590,9 +636,11 @@ footer .copyright p{
         font-size: 6rem;
         line-height: 6rem;
     }
+
     h2 {
         font-size: 3rem;
     }
+
     #presentation>.pres-left>p {
         font-size: 1.2rem;
     }
@@ -603,4 +651,3 @@ footer .copyright p{
         max-width: 1400px;
     }
 }
-
