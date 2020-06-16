@@ -1,13 +1,13 @@
 <?php
-$home = 1;
-
-include('header.php'); 
 
 $title = "Portfolio - Matis Baguelin";
 $description = "Matis Baguelin, je vous présente mon Portfolio, je suis en formation à l'EEMI (Ecole Européenne des Métiers de l'Internet) pour devenir développeur web !";
 $pageUrl = "http://matisbaguelin.fr/";
+$home = 1;
 
+include('header.php'); 
 ?>
+
 
 <main>
 	<section id="presentation">
