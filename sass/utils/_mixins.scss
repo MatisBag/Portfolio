@@ -1,0 +1,80 @@
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin border($colour: var(--color-text)) {
+    border: 2px solid $colour;
+}
+
+@mixin container-shadow{
+    box-shadow: 0px 2px 2px 0.17px rgba(0, 0, 0, 0.10);
+}
+
+@mixin btn($colour1: var(--color-text), $colour2: var(--bg)) {
+    padding: 12px 26px;
+    @include border;
+    color: $colour1;
+    background: $colour2;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 500ms ease;
+
+    &:hover {
+        background: $colour1;
+        color: $colour2;
+    }
+
+    &--full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@mixin heading-competence {
+    color: var(--color-text);
+    font-size: 18px;
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--bg-h4);
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+    transition: background-color 500ms ease, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out;
+
+    &:hover {
+        padding: 6px 42px;
+        border-radius: 45%;
+        background-color: var(--bg-h4-hover);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+@mixin btn-projet{
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(48, 48, 48); //function?
+    border-radius: 5px;
+    transition: 500ms ease-in-out;
+    margin: 5px;
+    display: flex;
+
+    &:hover {
+        background-color: rgb(19, 19, 19); //faire une funtion avec lighten
+        border-radius: 10px;
+    }
+
+    img {
+        height: 18px;
+        margin-right: 10px;
+    }
+}

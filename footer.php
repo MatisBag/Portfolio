@@ -1,9 +1,10 @@
 <footer>
-    <div class="footer">
-        <address>
-            <a href="https://www.linkedin.com/in/matis-baguelin/" target="_blanck" rel="noopener">Linkedin</a>
-            <a href="https://github.com/MatisBag" target="_blanck" rel="noopener">Github</a>
-            <p>matis.baguelin@gmail.com</p>
+    <div class="footer container">
+        <address class="social-media">
+            <a href="https://www.linkedin.com/in/matis-baguelin/" target="_blanck" rel="noopener"
+                class="social-media__link">Linkedin</a>
+            <a href="https://github.com/MatisBag" target="_blanck" rel="noopener" class="social-media__link">Github</a>
+            <p class="social-media__mail">matis.baguelin@gmail.com</p>
         </address>
 
         <div class="copyright">
@@ -15,6 +16,7 @@
         </div>
     </div>
 </footer>
+
 
 <?php 
     if (isset($home)) {
@@ -39,7 +41,7 @@
     }
     else {
         echo('
-        <script src="../js/script-projets.js"></script>
+        <script src="../js/script.js"></script>
         ');
     }
 ?>

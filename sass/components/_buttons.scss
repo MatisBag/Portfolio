@@ -1,0 +1,106 @@
+.btn {
+    @include btn
+}
+
+// TOGGLE
+#modeToggler {
+    margin-left: 15px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    -moz-appearance: initial;
+
+    &::before {
+        display: block;
+        content: ' ';
+        background-color: #1b1b1b;
+        width: 40px;
+        height: 19px;
+        border-radius: 20px;
+        margin-left: -5px;
+        margin-top: -3px;
+        transition: background-color 200ms;
+    }
+
+    &::after {
+        display: block;
+        content: ' ';
+        background-color: #c4c4c4;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: relative;
+        top: -17px;
+        left: 0px;
+        transition: left 200ms;
+    }
+
+    &:checked::before {
+        background-color: #525252;
+    }
+
+    &:checked::after {
+        background-color: #c4c4c4;
+        left: 16px;
+    }
+}
+
+// TOP
+.top {
+    display: none;
+
+    @include tablet-only {
+        display: block;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.349);
+        padding: 8px;
+        width: fit-content;
+        width: max-content;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+
+        a {
+            display: block;
+            max-height: 30px;
+        }
+
+        img {
+            height: 30px;
+            width: auto; //mettre image en blanc pour le dark mode ?
+        }
+    }
+}
+
+//BTN PROJET
+
+.btn-projet {
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    transition: 500ms ease-in-out;
+    margin: 5px;
+    display: flex;
+
+    &:hover {
+        background-color: rgb(63, 63, 63);
+        transition: 100ms ease-in-out;
+        border-radius: 10px;
+    }
+
+    img {
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    &--black {
+        background-color: black;
+        &:hover {
+            background-color: rgb(19, 19, 19);
+        }
+    }
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    user-select: none;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+::selection {
+    background: var(--color-text);
+    color: var(--bg);
+}
+
+footer ::selection {
+    background: white;
+    color: #26262b;
+}
+
+// transition dark mode
+// html.transition,
+// html.transition *{
+//   transition: 5s ease-in-out;
+// }
+
+body.light-mode {
+    .light {
+        display: initial;
+    }
+
+    .dark {
+        display: none;
+    }
+}
+
+body.dark-mode {
+    .dark {
+        display: initial;
+    }
+
+    .light {
+        display: none;
+    }
+}

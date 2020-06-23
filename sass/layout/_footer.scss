@@ -1,0 +1,51 @@
+footer {
+    background: #19191b;
+    width: 100%;
+    color: white;
+
+    .footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+            color: white;
+        }
+
+        .social-media {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            max-width: 550px;
+
+            &__link,
+            &__mail {
+                margin: 0 5px;
+            }
+        }
+
+        .copyright {
+            width: 100%;
+            padding-top: 30px;
+
+            figure {
+                display: flex;
+                align-items: center;
+                letter-spacing: .2rem;
+
+                img {
+                    height: 50px;
+                    margin-right: 20px;
+                }
+            }
+
+            p {
+                font-size: 0.8rem;
+                color: rgb(204, 204, 204);
+            }
+        }
+
+    }
+}
