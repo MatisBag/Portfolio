@@ -38,6 +38,7 @@ $homeUrl = "http://matisbaguelin.fr/";
 
 	<meta name="google-site-verification" content="mRoWjeL0n7yhVT14MbJg3sooMVon6Lk6Lcc-OVscFlQ" />
 	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo($homeUrl); ?>/css/prefixed/style.css">
 
 </head>
