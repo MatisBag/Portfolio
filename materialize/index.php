@@ -15,7 +15,7 @@ include('../header.php');
         <h2 class="projet__heading">Materialize</h2>
 
         <div class="projet__flex">
-            <a href="http://mbaguelin.eemi.tech/materialize/" target="_blanck">
+            <a href="http://mbaguelin.eemi.tech/HTML-CSS-JS/materialize/" target="_blanck">
             <div class="slideShowContainer">
                     <div class="imageHolder">
                         <img src="../images/projets/projet3/home-page.png" alt="Page d'acceuil">
@@ -44,7 +44,7 @@ include('../header.php');
         </div>
 
         <div class="projet__btns-flex">
-            <a href="http://mbaguelin.eemi.tech/materialize/" class="btn-projet bouncy" target="_blanck">Visiter le site</a>
+            <a href="http://mbaguelin.eemi.tech/HTML-CSS-JS/materialize/" class="btn-projet bouncy" target="_blanck">Visiter le site</a>
         </div>
 
     </section>
