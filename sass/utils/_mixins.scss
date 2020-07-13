@@ -19,6 +19,7 @@
 }
 
 @mixin btn($colour1: var(--color-text), $colour2: var(--bg)) {
+    text-align: center;
     padding: 12px 26px;
     @include border;
     color: $colour1;
@@ -31,6 +32,12 @@
     &:hover {
         background: $colour1;
         color: $colour2;
+    }
+
+    &--center {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
     }
 
     &--full-width {

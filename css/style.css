@@ -118,6 +118,7 @@ p, ul, li {
 }
 
 .btn {
+  text-align: center;
   padding: 12px 26px;
   border: 2px solid var(--color-text);
   color: var(--color-text);
@@ -130,6 +131,11 @@ p, ul, li {
 .btn:hover {
   background: var(--color-text);
   color: var(--bg);
+}
+.btn--center {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
 }
 .btn--full-width {
   width: 100%;
