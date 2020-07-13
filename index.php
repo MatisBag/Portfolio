@@ -152,7 +152,7 @@ include('header.php');
 			</div>
 		</div>
 
-		<a href="http://mbaguelin.eemi.tech/" class="btn btn--center">MINI-PROJETS</a>
+		<a href="http://mbaguelin.eemi.tech/" class="btn btn--center" target="_blank">MINI-PROJETS</a>
 
 	</section>
 
