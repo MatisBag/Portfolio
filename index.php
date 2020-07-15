@@ -106,6 +106,44 @@ include('header.php');
 
 		</div>
 
+
+		<hr>
+
+
+		<div class="outils">
+
+			<h4 class="outils__heading">Prochainement en apprentissage</h4>
+
+			<div class="outils__container">
+				<figure class="outils__pic">
+					<img class="outils__image light" src="images/competences/nodejs.png" alt="Logo Node.js">
+					<img class="outils__image dark" src="images/competences/d-nodejs.png" alt="Logo Node.js">
+					<figcaption>Node.js</figcaption>
+				</figure>
+				<figure class="outils__pic">
+					<img class="outils__image light" src="images/competences/react.png" alt="Logo Wordpress">
+					<img class="outils__image dark" src="images/competences/d-react.png" alt="Logo Wordpress">
+					<figcaption>React JS</figcaption>
+				</figure>
+				<figure class="outils__pic">
+					<img class="outils__image light" src="images/competences/symfony.png" alt="Logo Adobe Photoshop">
+					<img class="outils__image dark" src="images/competences/d-symfony.png" alt="Logo Adobe Photoshop">
+					<figcaption>Symphony</figcaption>
+				</figure>
+				<figure class="outils__pic">
+					<img class="outils__image light" src="images/competences/angular.png" alt="Logo Adobe Photoshop">
+					<img class="outils__image dark" src="images/competences/d-angular.png" alt="Logo Adobe Photoshop">
+					<figcaption>AngularJS</figcaption>
+				</figure>
+				<figure class="outils__pic">
+					<img class="outils__image light" src="images/competences/laravel.png" alt="Logo Adobe XD">
+					<img class="outils__image dark" src="images/competences/d-laravel.png" alt="Logo Adobe XD">
+					<figcaption>Laravel</figcaption>
+				</figure>
+			</div>
+
+		</div>
+
 	</section>
 
 
