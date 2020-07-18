@@ -6,6 +6,7 @@ Clique [ici](http://matisbaguelin.fr/) pour visualiser mon Profolio.
 ## Langages utilisés 
 
 * HTML5 / CSS (SASS)
+* PHP
 * Javascript
 
 
