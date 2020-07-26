@@ -5,7 +5,7 @@ $pageUrl = "http://matisbaguelin.fr/";
 $home = 1;
 
 
-include('header.php'); 
+include('header.php');
 ?>
 
 
@@ -46,18 +46,14 @@ include('header.php');
 		<div class="competence">
 			<div class="competence__langages">
 				<h4 class="competence__heading">Front-end</h4>
-				<img class="competence__image light" src="images/competences/front-end.png"
-					alt="compétences front-end : HTML, css, JavaScript">
-				<img class="competence__image dark" src="images/competences/d-front-end.png"
-					alt="compétences front-end : HTML, css, JavaScript">
+				<img class="competence__image light" src="images/competences/front-end.png" alt="compétences front-end : HTML, css, JavaScript">
+				<img class="competence__image dark" src="images/competences/d-front-end.png" alt="compétences front-end : HTML, css, JavaScript">
 			</div>
 
 			<div class="competence__langages">
 				<h4 class="competence__heading">Back-end</h4>
-				<img class="competence__image light" src="images/competences/back-end.png"
-					alt="compétences back-end : PHP, MySQL et Node.js en 2ème année" title="Node.js en 2ème année">
-				<img class="competence__image dark" src="images/competences/d-back-end.png"
-					alt="compétences back-end : PHP, MySQL et Node.js en 2ème année" title="Node.js en 2ème année">
+				<img class="competence__image light" src="images/competences/back-end.png" alt="compétences back-end : PHP, MySQL et Node.js en 2ème année" title="Node.js en 2ème année">
+				<img class="competence__image dark" src="images/competences/d-back-end.png" alt="compétences back-end : PHP, MySQL et Node.js en 2ème année" title="Node.js en 2ème année">
 			</div>
 		</div>
 
@@ -182,8 +178,19 @@ include('header.php');
 				<div class="proj-prev__container">
 					<div class="box">
 						<a href="materialize/">
-							<img src="images/projets/home-page.png"
-								alt="Projet 3 : Réalisation site avec avec Materialize">
+							<img src="images/projets/home-page.png" alt="Projet 3 : Réalisation site avec avec Materialize">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="proj-prev">
+				<h4 class="proj-prev__heading">Blog</h4>
+				<p class="proj-prev__byline">Réalisation d'un blog avec espace membres (BDD)</p>
+				<div class="proj-prev__container">
+					<div class="box">
+						<a href="blog/">
+							<img src="images/projets/" alt="Projet 4 : Réalisation d'un blog avec un espace membres en BDD">
 						</a>
 					</div>
 				</div>
@@ -204,5 +211,5 @@ include('header.php');
 </main>
 
 <?php
-include('footer.php'); 
+include('footer.php');
 ?>
