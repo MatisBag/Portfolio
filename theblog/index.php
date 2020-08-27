@@ -1,6 +1,6 @@
 <?php
-$title = "Matis Baguelin : Blog";
-$description = "Projet Blog : Le but était de développer un blog, avec un espace membres pour pouvoir écrire des commentaires.";
+$title = "Matis Baguelin : The Blog";
+$description = "Projet The Blog : Le but était de développer un blog, avec un espace membres pour pouvoir écrire des commentaires.";
 $pageUrl = "http://matisbaguelin.fr/blog/";
 
 
@@ -18,7 +18,7 @@ include('../header.php');
             <a href="http://mbaguelin.eemi.tech/BDD/blog/" target="_blanck">
                 <div class="slideShowContainer">
                     <div class="imageHolder">
-                        <img src="../images/projets/projet4/" alt="Page d'acceuil">
+                        <img src="../images/projets/projet4/article.png" alt="Page d'article">
                     </div>
                     <div class="imageHolder">
                         <img src="../images/projets/projet4/" alt="">
@@ -45,6 +45,7 @@ include('../header.php');
 
         <div class="projet__btns-flex">
             <a href="http://mbaguelin.eemi.tech/BDD/blog/" class="btn-projet bouncy" target="_blanck">Visiter le site</a>
+            <a href="https://github.com/MatisBag/tp-blog" class="btn-projet btn-projet--black" target="_blanck"><img src="../images/competences/d-github.png" alt="github icon">Github</a>
         </div>
 
     </section>

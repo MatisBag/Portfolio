@@ -185,12 +185,12 @@ include('header.php');
 			</div>
 
 			<div class="proj-prev">
-				<h4 class="proj-prev__heading">Blog</h4>
+				<h4 class="proj-prev__heading">Blog (En développement)</h4>
 				<p class="proj-prev__byline">Réalisation d'un blog avec espace membres (BDD)</p>
 				<div class="proj-prev__container">
 					<div class="box">
-						<a href="blog/">
-							<img src="images/projets/" alt="Projet 4 : Réalisation d'un blog avec un espace membres en BDD">
+						<a href="theblog/">
+							<img src="images/projets/theblog.png" alt="Projet 4 : Réalisation d'un blog avec un espace membres en BDD">
 						</a>
 					</div>
 				</div>
