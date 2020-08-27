@@ -18,7 +18,7 @@ include('../header.php');
             <a href="http://mbaguelin.eemi.tech/BDD/blog/" target="_blanck">
                 <div class="slideShowContainer">
                     <div class="imageHolder">
-                        <img src="../images/projets/projet4/article.png" alt="Page d'article">
+                        <img src="../images/projets/projet4/article.PNG" alt="Page d'article">
                     </div>
                     <div class="imageHolder">
                         <img src="../images/projets/projet4/" alt="">

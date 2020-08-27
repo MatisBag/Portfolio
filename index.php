@@ -190,7 +190,7 @@ include('header.php');
 				<div class="proj-prev__container">
 					<div class="box">
 						<a href="theblog/">
-							<img src="images/projets/theblog.png" alt="Projet 4 : Réalisation d'un blog avec un espace membres en BDD">
+							<img src="images/projets/theblog.PNG" alt="Projet 4 : Réalisation d'un blog avec un espace membres en BDD">
 						</a>
 					</div>
 				</div>
