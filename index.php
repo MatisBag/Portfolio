@@ -124,7 +124,7 @@ include('header.php');
 				<figure class="outils__pic">
 					<img class="outils__image light" src="images/competences/symfony.png" alt="Logo Adobe Photoshop">
 					<img class="outils__image dark" src="images/competences/d-symfony.png" alt="Logo Adobe Photoshop">
-					<figcaption>Symphony</figcaption>
+					<figcaption>Symfony</figcaption>
 				</figure>
 				<figure class="outils__pic">
 					<img class="outils__image light" src="images/competences/angular.png" alt="Logo Adobe Photoshop">
